@@ -1,5 +1,6 @@
 # Projeto FullStack
 
+
 Aplicação Full Stack composta por **frontend estático (HTML/CSS/JS)** e **backend em Node.js + Express + Knex**, incluindo integração com banco de dados, rotas organizadas e interface visual estruturada.
 
 ## 📂 Estrutura do Projeto
@@ -84,5 +85,8 @@ frontend/index.html
 1. Fork  
 2. Branch: `git checkout -b feature/minha-feature`  
 3. Commit  
+4. Push  
+5. Pull Request  
+
 4. Push  
 5. Pull Request  
