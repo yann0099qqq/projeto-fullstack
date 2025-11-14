@@ -90,3 +90,5 @@ frontend/index.html
 
 4. Push  
 5. Pull Request  
+
+Autores: Ian Antonio Santos / Gabriel Pedrosa Castro / Gabriel Augusto Barbosa
