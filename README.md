@@ -1,94 +1,55 @@
-# Projeto FullStack
+# 🚀 PROJETO FULLSTACK: FRONTEND ESTÁTICO & BACKEND NODE.JS COM POSTGRESQL
 
+[![Status do Projeto](https://img.shields.io/badge/Status-Concluído-brightgreen.svg)](https://github.com/yann0099qqq/projeto-fullstack)
+[![Linguagens](https://img.shields.io/github/languages/top/yann0099qqq/projeto-fullstack?style=flat)](https://github.com/yann0099qqq/projeto-fullstack)
+[![Tecnologias](https://img.shields.io/badge/Stack-Node%20%7C%20Express%20%7C%20Knex%20%7C%20PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)](https://github.com/yann0099qqq/projeto-fullstack)
+[![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+---
 
-Aplicação Full Stack composta por **frontend estático (HTML/CSS/JS)** e **backend em Node.js + Express + Knex**, incluindo integração com banco de dados, rotas organizadas e interface visual estruturada.
+## 💡 Sobre o Projeto
 
-## 📂 Estrutura do Projeto
+Esta é uma **aplicação Full Stack** que serve como um modelo de arquitetura para projetos web. O foco é demonstrar a integração robusta entre um frontend puramente estático (HTML/CSS/JS) e um backend eficiente construído em Node.js.
 
-```
-Projeto-FullStack/
-│
-├── backend/
-│   ├── server.js                # Servidor Express
-│   ├── routes/                  # Rotas da aplicação
-│   ├── middleware/              # Middlewares (ex.: autenticação)
-│   ├── database/                # Configurações e migrations
-│   ├── knexfile.js              # Configuração do Knex
-│   ├── package.json
-│   └── .env.example             # Variáveis de ambiente
-│
-├── frontend/
-│   ├── index.html               # Página inicial
-│   ├── dashboard.html           # Tela interna
-│   ├── css/                     # Estilos
-│   ├── js/                      # Scripts do frontend
-│   └── imagens/                 # Assets
-│
-├── index.html                   # página raiz (versão pública)
-├── css/                         # estilos globais
-├── js/                          # scripts globais
-└── imagens/                     # imagens globais
-```
+### Arquitetura
 
-## 🚀 Tecnologias Utilizadas
+| Camada | Tecnologia Principal | Características |
+| :--- |:--- | :--- |
+| **Frontend** | **HTML5, CSS3, JavaScript** | Leve, responsivo e interage diretamente com a API. |
+| **Backend (API)** | **Node.js, Express, Knex.js** | API RESTful organizada, responsável pela lógica de negócios. |
+| **Banco de Dados** | **PostgreSQL** | Banco de dados relacional robusto e escalável. |
+
+## 🌟 Funcionalidades
+
+* ✅ **Estrutura Modular:** Separação clara entre os diretórios `frontend/` e `backend/`.
+* 🔄 **API RESTful:** Endpoints bem definidos para operações CRUD (se aplicável).
+* 💾 **Persistência de Dados:** Conexão e manipulação do PostgreSQL via Knex.js.
+* 🖥️ **Interface Amigável:** Layout responsivo desenvolvido com padrões web modernos.
+
+## 🛠️ Tecnologias Utilizadas
 
 ### Frontend
-- HTML5  
-- CSS3  
-- JavaScript  
-- Layout responsivo
+| Nome | Ícone |
+| :--- | :--- |
+| HTML5 | <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5 Badge"> |
+| CSS3 | <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" alt="CSS3 Badge"> |
+| JavaScript (Vanilla) | <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript Badge"> |
 
-### Backend
-- Node.js  
-- Express  
-- Knex.js  
-- Banco de dados configurável via .env  
+### Backend e Banco de Dados
+| Nome | Ícone |
+| :--- | :--- |
+| Node.js | <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white" alt="Node.js Badge"> |
+| Express | <img src="https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white" alt="Express Badge"> |
+| Knex.js | <img src="https://img.shields.io/badge/Knex.js-4285F4?style=flat&logo=knex&logoColor=white" alt="Knex.js Badge"> |
+| PostgreSQL | <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white" alt="PostgreSQL Badge"> |
 
-## ⚙️ Instalação e Execução
+--- Autores
+Este projeto foi desenvolvido pelos seguintes autores:
 
-### 1. Backend
+Ian Antonio Santos
 
-```bash
-cd backend
-npm install
-```
+Gabriel Pedrosa Castro
 
-Crie o arquivo `.env` com:
+Gabriel Augusto Barbosa
 
-```
-PORT=3000
-DATABASE_CLIENT=sqlite3
-DATABASE_FILENAME=./database/db.sqlite
-```
 
-Inicie:
 
-```bash
-npm start
-```
-
-### 2. Frontend
-Basta abrir:
-
-```
-frontend/index.html
-```
-
-## 📌 Funcionalidades Principais
-- Estrutura modular  
-- API com Express  
-- Integração com banco  
-- Interface organizada  
-
-## 🤝 Contribuição
-
-1. Fork  
-2. Branch: `git checkout -b feature/minha-feature`  
-3. Commit  
-4. Push  
-5. Pull Request  
-
-4. Push  
-5. Pull Request  
-
-Autores: Ian Antonio Santos / Gabriel Pedrosa Castro / Gabriel Augusto Barbosa
