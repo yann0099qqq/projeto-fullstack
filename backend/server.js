@@ -1,13 +1,28 @@
 const express = require("express");
 const cors = require("cors");
 const knex = require("knex");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
+const path = require("path");
 
 const app = express();
-app.use(cors());
-app.use(express.json());
 
-// Conexão com SQLite
+app.use(express.json());
+app.use(cors());
+
+// ========================
+// SERVIR FRONTEND
+// ========================
+
+app.use(express.static(path.join(__dirname, "../frontend")));
+
+
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "../frontend/index.html"));
+});
+
+// ========================
+// BANCO DE DADOS
+// ========================
 const db = knex({
     client: "sqlite3",
     connection: {
@@ -27,7 +42,9 @@ db.schema.hasTable("users").then(exists => {
     }
 });
 
-// Rota de registro
+// ========================
+// ROTA DE REGISTRO
+// ========================
 app.post("/register", async (req, res) => {
     const { username, password } = req.body;
 
@@ -48,7 +65,9 @@ app.post("/register", async (req, res) => {
     }
 });
 
-// Rota de login
+// ========================
+// ROTA DE LOGIN
+// ========================
 app.post("/login", async (req, res) => {
     const { username, password } = req.body;
 
@@ -61,6 +80,8 @@ app.post("/login", async (req, res) => {
     res.json({ message: "Login realizado", userId: user.id });
 });
 
-// Iniciar servidor
+// ========================
+// INICIAR SERVIDOR
+// ========================
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
