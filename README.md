@@ -1,6 +1,5 @@
 # 🚀 PROJETO FULLSTACK: FRONTEND ESTÁTICO & BACKEND NODE.JS COM POSTGRESQL
 
-[![Status do Projeto](https://img.shields.io/badge/Status-Concluído-brightgreen.svg)](https://github.com/yann0099qqq/projeto-fullstack)
 [![Linguagens](https://img.shields.io/github/languages/top/yann0099qqq/projeto-fullstack?style=flat)](https://github.com/yann0099qqq/projeto-fullstack)
 [![Tecnologias](https://img.shields.io/badge/Stack-Node%20%7C%20Express%20%7C%20Knex%20%7C%20PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)](https://github.com/yann0099qqq/projeto-fullstack)
 [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
