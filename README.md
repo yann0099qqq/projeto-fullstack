@@ -41,7 +41,8 @@ Esta é uma **aplicação Full Stack** que serve como um modelo de arquitetura p
 | Knex.js | <img src="https://img.shields.io/badge/Knex.js-4285F4?style=flat&logo=knex&logoColor=white" alt="Knex.js Badge"> |
 | PostgreSQL | <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white" alt="PostgreSQL Badge"> |
 
---- Autores
+--- Autores--- 
+
 Este projeto foi desenvolvido pelos seguintes autores:
 
 Ian Antonio Santos
