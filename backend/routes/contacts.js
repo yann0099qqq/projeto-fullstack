@@ -5,9 +5,9 @@ const nodemailer = require('nodemailer');
 
 const router = express.Router();
 
-/* ================================
+/* 
    CREATE – POST /contacts
-================================ */
+ */
 router.post('/', [
   body('name').notEmpty(),
   body('email').isEmail(),
@@ -23,7 +23,7 @@ router.post('/', [
       .insert({ name, email, phone, message })
       .returning(['id','name','email','phone','message','created_at']);
 
-    // Envio de email (opcional)
+    // Envio de email 
     try {
       const transporter = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
@@ -51,9 +51,9 @@ router.post('/', [
   }
 });
 
-/* ================================
+/* 
    READ – GET /contacts
-================================ */
+ */
 router.get('/', async (req, res) => {
   const contacts = await knex('contacts')
     .select('*')
@@ -62,9 +62,9 @@ router.get('/', async (req, res) => {
   res.json(contacts);
 });
 
-/* ================================
+/* 
    READ – GET /contacts/:id
-================================ */
+ */
 router.get('/:id', async (req, res) => {
   const contact = await knex('contacts')
     .where({ id: req.params.id })
@@ -75,9 +75,9 @@ router.get('/:id', async (req, res) => {
   res.json(contact);
 });
 
-/* ================================
+/* 
    UPDATE – PUT /contacts/:id
-================================ */
+ */
 router.put('/:id', async (req, res) => {
   const { name, email, phone, message } = req.body;
 
@@ -102,9 +102,9 @@ router.put('/:id', async (req, res) => {
   }
 });
 
-/* ================================
+/* 
    DELETE – DELETE /contacts/:id
-================================ */
+*/
 router.delete('/:id', async (req, res) => {
   const deleted = await knex('contacts')
     .where({ id: req.params.id })
