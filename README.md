@@ -20,7 +20,7 @@ Esta é uma **aplicação Full Stack** que serve como um modelo de arquitetura p
 ## 🌟 Funcionalidades
 
 * ✅ **Estrutura Modular:** Separação clara entre os diretórios `frontend/` e `backend/`.
-* 🔄 **API RESTful:** Endpoints bem definidos para operações CRUD (se aplicável).
+* 🔄 **API RESTful:** Endpoints bem definidos para operações CRUD.
 * 💾 **Persistência de Dados:** Conexão e manipulação do PostgreSQL via Knex.js.
 * 🖥️ **Interface Amigável:** Layout responsivo desenvolvido com padrões web modernos.
 
