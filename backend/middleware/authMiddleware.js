@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const secret = process.env.JWT_SECRET || 'troque_esta_chave_por_uma_senha_segura';
+const secret = process.env.JWT_SECRET || 'APENAS NO VS!!';
 
 function authMiddleware(req, res, next) {
   const authHeader = req.headers.authorization;
