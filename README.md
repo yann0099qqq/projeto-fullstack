@@ -19,10 +19,19 @@ Esta é uma **aplicação Full Stack** que serve como um modelo de arquitetura p
 
 ## 🌟 Funcionalidades
 
-* ✅ **Estrutura Modular:** Separação clara entre os diretórios `frontend/` e `backend/`.
-* 🔄 **API RESTful:** Endpoints bem definidos para operações CRUD.
-* 💾 **Persistência de Dados:** Conexão e manipulação do PostgreSQL via Knex.js.
-* 🖥️ **Interface Amigável:** Layout responsivo desenvolvido com padrões web modernos.
+✅ API completa com CRUD para usuários, contatos, serviços, produtos, clientes, funcionários, posts, projetos e orçamentos.
+
+🔄 Integração Front → Back usando Fetch API.
+
+📬 Envio de e-mails via Nodemailer (formulário de contato).
+
+💾 Persistência total dos dados no PostgreSQL usando Knex.
+
+🗂️ Migrations organizadas para criação das tabelas.
+
+📱 Frontend responsivo, navegável e simples de expandir.
+
+🌐 API Pública integrada no frontend.
 
 ## 🛠️ Tecnologias Utilizadas
 
